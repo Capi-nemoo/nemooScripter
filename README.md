@@ -1,2 +1,210 @@
 # myArch-btw-
-Complete Arch Linux setup with i3, zsh, Alacritty, picom, and dotfiles. Minimal and personalized for a streamlined workflow.
+- [ ] **Desktop Environment**
+  - [ ] **i3 Window Manager**
+    - [ ] Configurar autostart en `~/.config/i3/config`
+      - [ ] **feh** - Establecer fondo de pantalla
+        - [ ] Seleccionar imagen de fondo
+        - [ ] Añadir comando `feh --bg-scale /ruta/a/tu/fondo.jpg` al autostart
+      - [ ] **picom** - Configurar transparencias
+        - [ ] Instalar `picom`
+        - [ ] Crear o editar `~/.config/picom.conf`
+        - [ ] Añadir `picom --config ~/.config/picom.conf &` al autostart
+      - [ ] **polybar** - Barra de estado
+        - [ ] Instalar `polybar`
+        - [ ] Configurar módulos en `~/.config/polybar/config`
+        - [ ] Añadir `polybar mybar &` al autostart
+      - [ ] **nm-applet** - Gestor de redes
+        - [ ] Instalar `network-manager-applet`
+        - [ ] Añadir `nm-applet &` al autostart
+      - [ ] **volumeicon** - Control de volumen
+        - [ ] Instalar `volumeicon`
+        - [ ] Añadir `volumeicon &` al autostart
+    - [ ] **Auto Tiling**
+      - [ ] Instalar `i3-gaps` para espacios entre ventanas
+      - [ ] Configurar reglas en `~/.config/i3/config`
+    - [ ] **Keybindings**
+      - [ ] `Mod + Enter` - Abrir terminal (ejemplo: Alacritty)
+      - [ ] `Mod + D` - Lanzador de aplicaciones (rofi o dmenu)
+      - [ ] `Mod + Shift + Q` - Cerrar ventana
+      - [ ] `Mod + H/J/K/L` - Navegar entre ventanas (estilo Vim)
+    - [ ] **i3status o i3blocks**
+      - [ ] Configurar información del sistema en la barra
+  - [ ] **picom**
+    - [ ] Configurar transparencias en `~/.config/picom.conf`
+    - [ ] Activar sombras y blur
+    - [ ] Considerar un fork con animaciones (ejemplo: `jonaburg/picom`)
+  - [ ] **feh**
+    - [ ] Configurar fondo de pantalla en autostart
+    - [ ] Crear scripts para cambiar fondos automáticamente
+  - [ ] **rofi / dmenu**
+    - [ ] Instalar `rofi`
+    - [ ] Configurar temas y apariencia
+    - [ ] Añadir atajo de teclado en i3
+
+- [ ] **Terminal y Shell**
+  - [ ] **Alacritty**
+    - [ ] Instalar `alacritty`
+    - [ ] Configurar en `~/.config/alacritty/alacritty.yml`
+    - [ ] Establecer transparencia y colores personalizados
+    - [ ] Seleccionar fuente (ejemplo: Fira Code Nerd Font)
+  - [ ] **Zsh**
+    - [ ] Instalar `zsh`
+    - [ ] Cambiar shell por defecto con `chsh -s $(which zsh)`
+    - [ ] Configurar en `~/.zshrc`
+  - [ ] **Oh My Zsh**
+    - [ ] Instalar Oh My Zsh
+    - [ ] Elegir y configurar un tema (ejemplo: `agnoster`, `powerlevel10k`)
+    - [ ] Añadir plugins en `~/.zshrc`
+      - [ ] `git`
+      - [ ] `zsh-autosuggestions`
+      - [ ] `zsh-syntax-highlighting`
+  - [ ] **Starship Prompt**
+    - [ ] Instalar `starship`
+    - [ ] Configurar en `~/.config/starship.toml`
+    - [ ] Integrar con Zsh en `~/.zshrc`
+
+- [ ] **Aplicaciones y Utilidades**
+  - [ ] **Neovim**
+    - [ ] Instalar `neovim`
+    - [ ] Configurar en `~/.config/nvim/init.vim` o `init.lua`
+    - [ ] Instalar gestor de plugins (ejemplo: `vim-plug`, `packer.nvim`)
+    - [ ] Añadir plugins esenciales
+  - [ ] **Ranger**
+    - [ ] Instalar `ranger`
+    - [ ] Configurar en `~/.config/ranger/rc.conf`
+    - [ ] Activar previsualización con `w3m` o `ueberzug`
+  - [ ] **Git y GitHub CLI**
+    - [ ] Instalar `git` y `gh`
+    - [ ] Configurar nombre y correo en git
+    - [ ] Autenticar con GitHub usando `gh auth login`
+  - [ ] **btop**
+    - [ ] Instalar `btop` para monitoreo del sistema
+    - [ ] Configurar en `~/.config/btop/`
+  - [ ] **Lazygit**
+    - [ ] Instalar `lazygit` para manejo de repositorios
+  - [ ] **Obsidian**
+    - [ ] Instalar `obsidian` (AUR)
+    - [ ] Configurar ruta de notas y sincronización
+  - [ ] **Otros**
+    - [ ] Instalar `tmux` para sesiones de terminal multiplexadas
+    - [ ] Instalar `htop` o `btop` para monitoreo
+    - [ ] Instalar `fzf` para búsqueda en terminal
+    - [ ] Instalar `curl`, `wget`, `httrack` para operaciones web
+
+- [ ] **Sistema y Servicios**
+  - [ ] **NetworkManager**
+    - [ ] Instalar `networkmanager`
+    - [ ] Habilitar servicio con `sudo systemctl enable NetworkManager`
+  - [ ] **Bluetooth**
+    - [ ] Instalar `bluez` y `blueman`
+    - [ ] Habilitar servicio con `sudo systemctl enable bluetooth`
+  - [ ] **Audio**
+    - [ ] Instalar `pulseaudio` y `pulseaudio-alsa`
+    - [ ] Instalar `pavucontrol` para control de volumen
+  - [ ] **Gestión de Energía**
+    - [ ] Instalar `tlp` para laptops
+    - [ ] Habilitar servicio con `sudo systemctl enable tlp`
+  - [ ] **Notificaciones**
+    - [ ] Instalar `dunst`
+    - [ ] Configurar en `~/.config/dunst/dunstrc`
+  - [ ] **Bloqueo de Pantalla**
+    - [ ] Instalar `i3lock` o `betterlockscreen`
+    - [ ] Configurar atajos en i3
+  - [ ] **Scripts de Autostart**
+    - [ ] Configurar `~/.xinitrc` o `~/.xprofile`
+    - [ ] Añadir programas que deben iniciarse con el sistema
+
+- [ ] **Apariencia y Temas**
+  - [ ] **Fuentes**
+    - [ ] Instalar Nerd Fonts (ejemplo: `ttf-fira-code`, `ttf-hack`)
+    - [ ] Actualizar caché con `fc-cache -fv`
+  - [ ] **Iconos**
+    - [ ] Instalar `papirus-icon-theme` o similar
+    - [ ] Configurar con `lxappearance`
+  - [ ] **Temas GTK**
+    - [ ] Instalar tema (ejemplo: `arc-gtk-theme`)
+    - [ ] Configurar con `lxappearance`
+  - [ ] **Tema de Cursor**
+    - [ ] Instalar tema de cursor (ejemplo: `xcursor-breeze`)
+    - [ ] Configurar en `~/.icons/default/index.theme`
+
+- [ ] **Herramientas de Desarrollo**
+  - [ ] **Compiladores y Herramientas**
+    - [ ] Instalar `base-devel` (incluye `gcc`, `make`, etc.)
+  - [ ] **Lenguajes de Programación**
+    - [ ] **Python**
+      - [ ] Instalar `python` y `python-pip`
+      - [ ] Configurar `pyenv` para gestionar versiones
+    - [ ] **Node.js**
+      - [ ] Instalar `nvm` o `nodejs` y `npm`
+    - [ ] **Rust**
+      - [ ] Instalar `rustup`
+    - [ ] **Go**
+      - [ ] Instalar `go`
+  - [ ] **Docker**
+    - [ ] Instalar `docker` y `docker-compose`
+    - [ ] Añadir usuario al grupo docker: `sudo usermod -aG docker $USER`
+    - [ ] Habilitar servicio con `sudo systemctl enable docker`
+  - [ ] **Virtualización**
+    - [ ] Instalar `virtualbox` o `qemu`
+    - [ ] Instalar `vagrant` para gestión de entornos
+  - [ ] **IDEs y Editores**
+    - [ ] Instalar `vscodium` o `visual-studio-code-bin` (AUR)
+    - [ ] Configurar extensiones y settings sincronizados
+
+- [ ] **Otros Ajustes y Configuraciones**
+  - [ ] **Gestor de AUR**
+    - [ ] Instalar `yay` o `paru` para manejar paquetes de AUR
+  - [ ] **Configuración de Sudo**
+    - [ ] Añadir usuario al archivo sudoers si es necesario
+  - [ ] **Backups**
+    - [ ] Configurar `rsync` o `timeshift` para backups regulares
+  - [ ] **Seguridad**
+    - [ ] Instalar `ufw` (firewall)
+    - [ ] Configurar reglas básicas con `sudo ufw enable`
+  - [ ] **Sincronización de Tiempo**
+    - [ ] Habilitar `systemd-timesyncd` con `sudo systemctl enable systemd-timesyncd`
+  - [ ] **Navegador Web**
+    - [ ] Instalar `firefox`, `brave`, o `chromium`
+    - [ ] Configurar extensiones y preferencias
+  - [ ] **Aplicaciones Adicionales**
+    - [ ] Instalar gestores de paquetes Snap o Flatpak si es necesario
+    - [ ] Instalar aplicaciones como `gimp`, `inkscape`, `libreoffice` según necesidades
+
+- [ ] **Documentación y Gestión de Configuraciones**
+  - [ ] **Dotfiles**
+    - [ ] Crear repositorio en GitHub para tus dotfiles
+    - [ ] Sincronizar archivos de configuración importantes
+    - [ ] Utilizar herramientas como `stow` o `chezmoi` para gestionar dotfiles
+  - [ ] **Documentar Pasos de Instalación**
+    - [ ] Crear un `README.md` detallado
+    - [ ] Anotar comandos y configuraciones especiales
+  - [ ] **Automatización**
+    - [ ] Escribir scripts en Bash para automatizar configuraciones
+    - [ ] Considerar usar Ansible para despliegues futuros
+
+- [ ] **Personalización Avanzada**
+  - [ ] **Scripts y Aliases**
+    - [ ] Añadir alias útiles en `~/.zshrc`
+    - [ ] Crear scripts para tareas repetitivas
+  - [ ] **Integración con Servicios**
+    - [ ] Configurar `cron` jobs para tareas programadas
+    - [ ] Configurar notificaciones de sistema o correo
+  - [ ] **Temas para Terminal**
+    - [ ] Instalar y configurar temas en `Alacritty` o tu terminal preferida
+    - [ ] Configurar esquemas de colores como `gruvbox` o `nord`
+  - [ ] **Gestión de Sesiones**
+    - [ ] Instalar y configurar `tmux` o `screen`
+    - [ ] Personalizar barra de estado y plugins
+
+- [ ] **Aprendizaje y Mejora Continua**
+  - [ ] **Explorar Nuevas Herramientas**
+    - [ ] Probar otros window managers como `bspwm`, `awesome`
+    - [ ] Experimentar con `wayland` y compositores como `sway`
+  - [ ] **Mantener el Sistema Actualizado**
+    - [ ] Configurar actualizaciones periódicas
+    - [ ] Leer noticias de Arch Linux para cambios importantes
+  - [ ] **Participar en la Comunidad**
+    - [ ] Unirse a foros y comunidades de Arch Linux
+    - [ ] Contribuir a proyectos open-source
+
