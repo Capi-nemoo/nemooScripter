@@ -1,4 +1,7 @@
-# myArch-btw-
+
+![Copy of Copy of Untitled (Discord Profile Banner)](https://github.com/user-attachments/assets/cb093cf3-869d-4153-ab3e-3c0d5f0a4068)
+w-
+# myArch-bt
 
 myArch-btw- is a set of scripts and configurations designed for those who want to start with Arch Linux in a more organized and structured way. This project complements [nemoo-config](https://github.com/yourusername/nemoo-config), providing a system that creates and organizes essential directories and initial configurations right after Arch installation.
 
