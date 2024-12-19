@@ -40,9 +40,15 @@ Welcome to **nemooScripter**! This is a collection of scripts designed to solve 
 
 ### Automation
 
-Scripts to automate boring or repetitive tasks. Perfect for saving time.
+#### git_push_all_repos 
 
-- **Examples:** Backup your files, sync your dotfiles, or auto-mount drives.
+This script automates git add, commit, push, and handles sync issues (git pull) for all Git repositories inside a specified root directory.
+
+How to use:
+
+1. Save the script to a file (e.g., push_all_repos.sh).
+2. Make it executable: chmod +x push_all_repos.sh.
+3. Run it: ./push_all_repos.sh /path/to/root/directory.
 
 ### System Tweaks
 
