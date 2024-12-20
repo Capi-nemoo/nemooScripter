@@ -6,6 +6,13 @@
 **nemooScripter** is a growing collection of scripts for all kinds of tasks, made for Linux users who like to keep things efficient and cool. Whether you need to automate something, fix an issue, or just have fun experimenting, this repo has got you covered.
 
 ---
+## How to Use
+
+1. Check the [categories](#script-categories) and find what you need.
+2. Read the description to see what each script does.
+3. Clone the repo, pick a script, and run it.
+4. Some scripts might need extra setup; check the comments inside.
+---
 
 ## Table of Contents
 
@@ -19,36 +26,16 @@
    - [Fun & Random](#fun--random)
 4. [Contributing](#contributing)
 
----
-
-## Introduction
-
-Welcome to **nemooScripter**! This is a collection of scripts designed to solve everyday problems, tweak Linux systems, and automate stuff. It’s built with love for Linux enthusiasts who like to keep their terminal blazing.
-
----
-
-## How to Use
-
-1. Check the [categories](#script-categories) and find what you need.
-2. Read the description to see what each script does.
-3. Clone the repo, pick a script, and run it.
-4. Some scripts might need extra setup; check the comments inside.
-
----
-
 ## Script Categories
 
 ### Automation
 
-#### git_push_all_repos 
+**git_push_all_repos :** This script automates git add, commit, push, and handles sync issues (git pull) for all Git repositories inside a specified root directory.
 
-This script automates git add, commit, push, and handles sync issues (git pull) for all Git repositories inside a specified root directory.
-
-How to use:
-
-1. Save the script to a file (e.g., push_all_repos.sh).
-2. Make it executable: chmod +x push_all_repos.sh.
-3. Run it: ./push_all_repos.sh /path/to/root/directory.
+Run it:
+```bash
+./push_all_repos.sh /path/to/root/directory.
+```
 
 ### System Tweaks
 
