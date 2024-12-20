@@ -31,12 +31,11 @@
 ### Automation
 Scripts to automate boring or repetitive tasks. Perfect for saving time.
 
-**git_push_all_repos :** This script automates git add, commit, push, and handles sync issues (git pull) for all Git repositories inside a specified root directory.
-
-Run it:
-```bash
-./push_all_repos.sh /path/to/root/directory.
-```
+* **git_push_all_repos :** This script automates git add, commit, push, and handles sync issues (git pull) for all Git repositories inside a specified root directory.
+    Run it:
+    ```bash
+    ./push_all_repos.sh /path/to/root/directory.
+    ```
 
 ---
 ### System Tweaks
