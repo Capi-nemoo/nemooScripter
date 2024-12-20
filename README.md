@@ -29,6 +29,7 @@
 ## Script Categories
 
 ### Automation
+Scripts to automate boring or repetitive tasks. Perfect for saving time.
 
 **git_push_all_repos :** This script automates git add, commit, push, and handles sync issues (git pull) for all Git repositories inside a specified root directory.
 
@@ -37,32 +38,24 @@ Run it:
 ./push_all_repos.sh /path/to/root/directory.
 ```
 
+---
 ### System Tweaks
-
 Tools to customize and optimize your Linux setup.
 
-- **Examples:** Change your window manager config, adjust system performance, or clean up packages.
-
+---
 ### Networking
-
 Scripts for handling network-related tasks.
 
-- **Examples:** Monitor bandwidth, set up a local web server, or troubleshoot connections.
-
+---
 ### Productivity
-
 Small tools to make your workflow smoother.
 
-- **Examples:** File renamers, note-taking tools, or shortcuts for common tasks.
-
+---
 ### Fun & Random
-
 For when you just want to mess around or try something different.
 
-- **Examples:** Bash games, visual effects for the terminal, or small experiments.
 
 ---
-
 ## Contributing
 
 Got a script you think fits? Feel free to contribute! Here's how:
